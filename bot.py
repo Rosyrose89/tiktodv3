@@ -35,6 +35,7 @@ class Bot:
         chrome_options.add_argument("--disable-software-rasterizer")
         chrome_options.add_argument("--log-level=3")  # Suppress most logs
         chrome_options.add_argument("--disable-logging")  # Disable logging
+        chrome_options.add_extension('C:\tiktodv3/ublock.crx') # Replace with the path to your uBlock Origin extension
         
         self.driver = webdriver.Chrome(options=chrome_options)
 
